@@ -24,22 +24,27 @@ files = glob.glob(dir+'/gazou/**/*.jpg', recursive=True)
 
 
 for file in files:
-    print(file)
     
+
     opath = file.replace("/gazou/", "/docs/gazou/")
 
-    tmp = os.path.split(opath)
-    odir = tmp[0]
+    if not os.path.exists(opath):
+        print(file)
+    
 
-    os.makedirs(odir, exist_ok=True)
+        tmp = os.path.split(opath)
+        odir = tmp[0]
 
-    p = odir.replace(dir+"/docs", prefix)
-    print(p)
+        os.makedirs(odir, exist_ok=True)
 
-    line = "python iiif_static/iiif_static.py  -d "+odir+" -t 200  -p "+p+" "+file
+        p = odir.replace(dir+"/docs", prefix)
+    
+    
+
+        line = "python iiif_static/iiif_static.py  -d "+odir+" -t 200  -p "+p+" "+file
 
     
-    writer.writerow([line])
+        writer.writerow([line])
     
 
 f.close()

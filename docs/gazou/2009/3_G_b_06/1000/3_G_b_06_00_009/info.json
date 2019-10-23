@@ -1,0 +1,64 @@
+{
+  "@context": "http://iiif.io/api/image/2/context.json",
+  "@id": "http://nakamura196.github.io/toyo_images/gazou/2009/3_G_b_06/1000/3_G_b_06_00_009",
+  "height": 1583,
+  "profile": [
+    "http://iiif.io/api/image/2/level0.json",
+    {
+      "formats": [
+        "jpg"
+      ],
+      "qualities": [
+        "default"
+      ]
+    }
+  ],
+  "protocol": "http://iiif.io/api/image",
+  "sizes": [
+    {
+      "height": 99,
+      "width": 125
+    },
+    {
+      "height": 49,
+      "width": 63
+    },
+    {
+      "height": 25,
+      "width": 31
+    },
+    {
+      "height": 12,
+      "width": 16
+    },
+    {
+      "height": 6,
+      "width": 8
+    },
+    {
+      "height": 3,
+      "width": 4
+    },
+    {
+      "height": 2,
+      "width": 2
+    },
+    {
+      "height": 1,
+      "width": 1
+    }
+  ],
+  "tiles": [
+    {
+      "height": 200,
+      "scaleFactors": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "width": 200
+    }
+  ],
+  "width": 2000
+}
