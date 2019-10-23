@@ -27,19 +27,18 @@ for file in files:
     
 
     opath = file.replace("/gazou/", "/docs/gazou/")
+    tmp = os.path.split(opath)
+    odir = tmp[0]
 
-    if not os.path.exists(opath):
+    if not os.path.exists(odir):
         print(file)
     
 
-        tmp = os.path.split(opath)
-        odir = tmp[0]
+        
 
         os.makedirs(odir, exist_ok=True)
 
         p = odir.replace(dir+"/docs", prefix)
-    
-    
 
         line = "python iiif_static/iiif_static.py  -d "+odir+" -t 200  -p "+p+" "+file
 
