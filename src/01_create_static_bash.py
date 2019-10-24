@@ -23,8 +23,9 @@ writer = csv.writer(f, lineterminator='\n')
 files = glob.glob(dir+'/gazou/**/*.jpg', recursive=True)
 
 
-for file in files:
-    
+for i in range(len(files)):
+
+    file = files[i]
 
     opath = file.replace("/gazou/", "/docs/gazou/")
     tmp = os.path.split(opath)
@@ -34,6 +35,9 @@ for file in files:
         print(file)
 
         # os.makedirs(odir, exist_ok=True)
+
+        line = "echo "+str(i+1)+"/"+str(len(files))
+        writer.writerow([line])
 
         line = "mkdir -p "+odir
         writer.writerow([line])
