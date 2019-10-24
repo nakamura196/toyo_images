@@ -1,0 +1,62 @@
+{
+  "@context": "http://iiif.io/api/image/2/context.json",
+  "@id": "http://nakamura196.github.io/toyo_images/gazou/201511/XI-6-B-3_7/XI-6-B-3_07_0007",
+  "height": 11177,
+  "profile": [
+    "http://iiif.io/api/image/2/level0.json",
+    {
+      "formats": [
+        "jpg"
+      ],
+      "qualities": [
+        "default"
+      ]
+    }
+  ],
+  "protocol": "http://iiif.io/api/image",
+  "sizes": [
+    {
+      "height": 175,
+      "width": 63
+    },
+    {
+      "height": 87,
+      "width": 31
+    },
+    {
+      "height": 44,
+      "width": 16
+    },
+    {
+      "height": 22,
+      "width": 8
+    },
+    {
+      "height": 11,
+      "width": 4
+    },
+    {
+      "height": 5,
+      "width": 2
+    },
+    {
+      "height": 3,
+      "width": 1
+    }
+  ],
+  "tiles": [
+    {
+      "height": 200,
+      "scaleFactors": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32
+      ],
+      "width": 200
+    }
+  ],
+  "width": 4000
+}
