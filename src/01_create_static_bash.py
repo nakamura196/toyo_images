@@ -32,17 +32,15 @@ for file in files:
 
     if not os.path.exists(odir):
         print(file)
-    
 
-        
+        # os.makedirs(odir, exist_ok=True)
 
-        os.makedirs(odir, exist_ok=True)
+        line = "mkdir -p "+odir
+        writer.writerow([line])
 
         p = odir.replace(dir+"/docs", prefix)
 
         line = "python iiif_static/iiif_static.py  -d "+odir+" -t 200  -p "+p+" "+file
-
-    
         writer.writerow([line])
     
 
