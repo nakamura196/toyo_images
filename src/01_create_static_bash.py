@@ -31,8 +31,10 @@ for i in range(len(files)):
     tmp = os.path.split(opath)
     odir = tmp[0]
 
-    if not os.path.exists(odir):
-        print(file)
+    info_path = opath.replace(".jpg", "/info.json")
+
+    if not os.path.exists(info_path):
+        print(info_path)
 
         # os.makedirs(odir, exist_ok=True)
 
